@@ -125,6 +125,7 @@
  @returns The string index
  */
 - (NSInteger)stringIndexForPosition:(CGPoint)position;
+- (NSInteger)stringIndexForPosition2:(CGPoint)position;
 
 /**
  The frame of the receiver relative to the layout frame

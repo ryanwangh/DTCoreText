@@ -267,6 +267,11 @@
 	return index;
 }
 
+- (NSInteger)stringIndexForPosition2:(CGPoint)position
+{
+    return CTLineGetStringIndexForPosition(_line, position);
+}
+
 - (void)_calculateMetrics
 {
 	@synchronized(self)

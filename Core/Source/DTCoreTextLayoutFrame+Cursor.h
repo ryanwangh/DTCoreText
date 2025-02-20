@@ -30,4 +30,17 @@
  */
 - (CGRect)cursorRectAtIndex:(NSInteger)index;
 
+- (NSRange)getRangeAtIndex:(NSInteger)index isWord:(BOOL)isWord;
+- (NSArray *)calculateSelectRectPathsWithRange:(NSRange)selectedRange;
+
+- (NSString *)getTextWithRange:(NSRange)range;
+
+/**
+ 手指移动过程中,所在文字的区域
+ 
+ @param point 点击区域
+ @return 文字index
+ */
+- (CFIndex)movePointToSelectIndex:(CGPoint)touchPoint;
+
 @end

@@ -92,5 +92,7 @@
 #import "DTAccessibilityViewProxy.h"
 #import "DTCoreTextLayoutFrameAccessibilityElementGenerator.h"
 
+#import "DTAttributedLabel+Selection.h"
+
 #endif
 
